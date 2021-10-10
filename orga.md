@@ -1,7 +1,8 @@
 # Algorithmique en javascript/node.js
 
-[Guide MDN Javascript complet ](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide)
-[w3school: training](http://w3school.org)
+- [Guide MDN Javascript complet ](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide)
+
+- [w3school: training](http://w3school.org)
 
 ## Jour 1:
 
@@ -17,7 +18,10 @@
 ## Jour 2:
 
 **Structures de données**
+
 [MDN object](https://developer.mozilla.org/fr/docs/Web/JavaScript/Data_structures)
+
+[TYpeOF](https://www.freecodecamp.org/news/javascript-typeof-how-to-check-the-type-of-a-variable-or-object-in-js/)
 
 - Typage des variables
 - constante
