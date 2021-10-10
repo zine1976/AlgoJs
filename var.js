@@ -4,4 +4,4 @@ console.log(start);
 
 
 
-document.getElementById("newvar").innerHTML(start);
+document.getElementById("demo").innerHTML = start;
