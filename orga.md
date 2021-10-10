@@ -11,7 +11,7 @@
 - client/serveur
 - variables
 - classe, fonction
-- Manipulation du Dom
+- Manipulation du Dom [doc dom](https://www.w3schools.com/whatis/whatis_htmldom.asp)
 - événementiel
 
 
