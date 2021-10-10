@@ -21,9 +21,7 @@
 
 [MDN object](https://developer.mozilla.org/fr/docs/Web/JavaScript/Data_structures)
 
-[TYpeOF](https://www.freecodecamp.org/news/javascript-typeof-how-to-check-the-type-of-a-variable-or-object-in-js/)
-
-- Typage des variables
+- Typage des variables [TYpeOF](https://www.freecodecamp.org/news/javascript-typeof-how-to-check-the-type-of-a-variable-or-object-in-js/)
 - constante
 - valeur primitive
 - Object notion: clé-valeurs (Propriété,accesseur,)
