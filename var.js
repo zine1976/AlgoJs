@@ -1,7 +1,5 @@
-var start = "HelloWorld In Js";
+var start = "HelloWorld In Js From Script";
+var page='<html><body><p id="demo"></p></body></html>';
+console.log(start,page);
 
-console.log(start);
-
-
-
-document.getElementById("demo").innerHTML = start;
+// getElementById('demo').innerHTML= page;
