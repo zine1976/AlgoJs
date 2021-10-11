@@ -23,7 +23,6 @@
 
 - Typage des variables [TYpeOF](https://www.freecodecamp.org/news/javascript-typeof-how-to-check-the-type-of-a-variable-or-object-in-js/)
 - constante
-- valeur primitive
 - Object notion: clé-valeurs (Propriété,accesseur,)
 - les tableaux: (typer)
 - programmation Orientée object
