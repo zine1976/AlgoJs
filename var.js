@@ -1,3 +1,4 @@
+// Code de Cristian
 
 console.log("var.js");
 
@@ -101,6 +102,17 @@ function fun() {
 
 
 
+console.log("var.js")
+
+var x = 15;
+var z = " Salut";
+var y = " DWWM19 "
+z += y;
+x += 15;
+x *= 3;
+x -= 2;
+x /= 2; 
+x += z;
 
 
 /* Variables Emilie */
@@ -154,6 +166,8 @@ function(e){
     console.log("clickeddd :" + clickeddd);
     alert("mdr bien vu Neo");
 }
+
+
 
 
 
@@ -229,6 +243,9 @@ console.log("The last modif " + etagere)
 
 
 
+console.log(x);
+
+document.getElementById('demo').innerHTML= x;
 
 
 

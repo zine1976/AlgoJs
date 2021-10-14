@@ -12,24 +12,21 @@ function(e){
 
 
 
-
-
-
-
 var clicked = document.getElementById("clicked")
-clicked.onclick =
-function(e){
-    console.log("clicked: " + clicked);
-    clicked.style.color = "4px blue;";     
-    alert("you have clicked ?");
+
+clicked.onclick = function (e) {
     
-}
+    if(clicked.style.backgroundColor=="green"){
+        clicked.style.background="blue";
+       
+    }
+    else{
+        clicked.style.background="green";
+    }
+    
+    console.log("clicked: "+clicked);
 
 
-
-
-function testing(){
-    alert("test")
 }
 
 
