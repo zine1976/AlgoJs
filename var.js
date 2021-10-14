@@ -15,5 +15,17 @@ function Dice(){
     change.innerHTML= result;
 }
 
+change.onclick = function e() {
+    ColorDice()
+};
+
+function ColorDice(){
+    var red = Math.ceil(Math.random()*256)-1;
+    var green = Math.ceil(Math.random()*256)-1;
+    var blue = Math.ceil(Math.random()*256)-1;
+    var color = "rgb("+red+", "+green+", "+blue+")"
+    document.getElementById('button').style.backgroundColor = color;
+}
+
 
 // getElementById('demo').innerHTML= page;
