@@ -10,7 +10,7 @@
 
 - client/serveur
 - variables
-- classe, fonction
+- classe, fonction [doc classes](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes)
 - Manipulation du Dom [doc dom](https://www.w3schools.com/whatis/whatis_htmldom.asp)
 - événementiel
 
@@ -23,7 +23,6 @@
 
 - Typage des variables [TYpeOF](https://www.freecodecamp.org/news/javascript-typeof-how-to-check-the-type-of-a-variable-or-object-in-js/)
 - constante
-- valeur primitive
 - Object notion: clé-valeurs (Propriété,accesseur,)
 - les tableaux: (typer)
 - programmation Orientée object
