@@ -143,15 +143,15 @@ x = x + z
 console.log("modif2" + log + x);
 
 var fkg = document.getElementById('fkg');
-console.log(fkg)
-fkg.innerHTML = log + z + x
+console.log(fkg);
+fkg.innerHTML = log + z + x;
 
 
 // variable clicked
 
-var clicked = document.getElementById('clickedd').onclick =
+var clickeddd = document.getElementById('clickeddd').onclick =
 function(e){
-    console.log("clicked :" +clickedd);
+    console.log("clickeddd :" + clickeddd);
     alert("mdr bien vu Neo");
 }
 
