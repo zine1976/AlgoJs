@@ -1,5 +1,8 @@
-console.log("var.js")
 // Code de Cristian
+
+
+console.log("var.js")
+
 var x = 15;
 var z = " Salut";
 var y = " DWWM19 "
