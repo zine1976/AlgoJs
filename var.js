@@ -17,7 +17,7 @@ x += z;
 
 console.log(x);
 
-document.getElementById('demo')= x;
+document.getElementById('demo').innerHTML= x;
 
 
 
