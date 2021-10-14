@@ -1,6 +1,12 @@
 
 
 
+function fun() {  
+    alert("Bienvenue sur le site!");  
+    }  
+
+
+
 
 console.log("var.js");
 /* Variables Emilie */
@@ -126,6 +132,7 @@ x = x
 //modif 5 
 const etagere = [x,y,z]
 console.log("The last modif " + etagere)
+
 
 
 
