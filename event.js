@@ -1,8 +1,8 @@
 console.log("event.js")
 
-var clicked = document.getElementById("clicked").onclick =
+var clicked = document.getElementById("clickedd").onclick =
 function(e){
-    console.log("clicked: " + clicked);
+    console.log("clickedd: " + clicked);
     alert("T'as perdu, faut donner 50€ via paypal à michelvilbert9@gmail.com");     
 }
 
