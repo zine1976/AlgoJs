@@ -1,0 +1,14 @@
+div{
+    background: red;
+    border: solid black 1px;
+    margin: 0 40% 0 40%;
+}
+
+div p{
+    color: white;
+    text-align: center;
+}
+
+div:hover{
+    cursor: pointer;
+}
