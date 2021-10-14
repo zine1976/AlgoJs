@@ -6,7 +6,7 @@ var clicked = document.getElementById("clicked");
 
 clicked.onclick = function (e) {
     
-    if(clicked.style.background[0]=="g"){
+    if(clicked.style.backgroundColor=="green"){
         clicked.style.background="blue";
        
     }
@@ -16,4 +16,6 @@ clicked.onclick = function (e) {
     
     console.log("clicked: "+clicked);
 
+
 }
+
