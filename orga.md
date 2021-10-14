@@ -62,22 +62,23 @@
 # Ressources:
 
 **PSEUDO-code explicatif (non-fonctionnel en javascript) algo des pates**
+    ```javascript
+        // on definit ce que l'on a besoins dans des variables
+        var pate = "pate"
+        var eau = "eau"
+        var feux = "feux"
+        var casserole= "casserole"
+        // condition qui vérifie que l'on a tout ce qu'il nous faut 
+        if casserole & eau & pate {
 
-    // on definit ce que l'on a besoins dans des variables
-    var pate = "pate"
-    var eau = "eau"
-    var feux = "feux"
-    var casserole= "casserole"
-    // condition qui vérifie que l'on a tout ce qu'il nous faut 
-    if casserole & eau & pate {
-    
-        if feux { // condition qui verifie que le feux est allumer
-            put eau + casserole // si le feux n'est pas null alors on y ajoute l'eau dans la casserole sur le feux 
+            if feux { // condition qui verifie que le feux est allumer
+                put eau + casserole // si le feux n'est pas null alors on y ajoute l'eau dans la casserole sur le feux 
+            }
+            if eau + casserole + feux = True { // condition qui vérifie que toute les conditions sont reunis
+                wait 5 min // on lance l'attente pendant la cuisson si tout est bon jusque la 
+            }
+            if(5 min = true){ // condition qui vérifie que l'on ai bien attendu
+                return patte mangeable // si condition est vérifier alors on retourne le résultat: des pattes qui se mange
+            }
         }
-        if eau + casserole + feux = True { // condition qui vérifie que toute les conditions sont reunis
-            wait 5 min // on lance l'attente pendant la cuisson si tout est bon jusque la 
-        }
-        if(5 min = true){ // condition qui vérifie que l'on ai bien attendu
-            return patte mangeable // si condition est vérifier alors on retourne le résultat: des pattes qui se mange
-        }
-    }
+    ```
