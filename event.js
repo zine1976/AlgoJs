@@ -1,5 +1,19 @@
-var clicked = document.getElementById("clicked").onclick =
+
+
+
+
+var clicked = document.getElementById("clicked")
+clicked.onclick =
 function(e){
-    console.log("clicked: " + clicked)
-    alert("you have clicked ?")     
+    console.log("clicked: " + clicked);
+    clicked.style.border = "4px solid blue;";     
+    alert("you have clicked ?");
+    
+}
+
+
+
+
+function testing(){
+    alert("test")
 }
