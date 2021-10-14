@@ -15,3 +15,9 @@ document.getElementById("string").innerHTML = string;
 document.getElementById("integer").innerHTML = integer;
 document.getElementById("bool").innerHTML = bool;
 document.getElementById("variable").innerHTML = variable;
+
+
+document.getElementById("char").innerHTML = string;
+document.getElementById("nombre").innerHTML = integer;
+document.getElementById("vraixfaux").innerHTML = bool;
+document.getElementById("celleci").innerHTML = variable;
