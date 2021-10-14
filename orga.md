@@ -62,7 +62,7 @@
 # Ressources:
 
 **PSEUDO-code explicatif (non-fonctionnel en javascript) algo des pates**
-
+    ```javascript
     // on definit ce que l'on a besoins dans des variables
     var pate = "pate"
     var eau = "eau"
@@ -81,3 +81,4 @@
             return patte mangeable // si condition est vérifier alors on retourne le résultat: des pattes qui se mange
         }
     }
+    ```
