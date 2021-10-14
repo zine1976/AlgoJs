@@ -11,3 +11,7 @@ const bool = [true, false, null]
 const variable = [g1,g2,g3]
 
 
+document.getElementById("string").innerHTML = string;
+document.getElementById("integer").innerHTML = integer;
+document.getElementById("bool").innerHTML = bool;
+document.getElementById("variable").innerHTML = variable;
