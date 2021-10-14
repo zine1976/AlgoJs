@@ -1,4 +1,4 @@
-
+console.log("var.js")
 // Code de Cristian
 var x = 15;
 var z = " Salut";
