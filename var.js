@@ -9,26 +9,32 @@ console.log(result);
 document.getElementById('demo').innerHTML= result;
 
 
-
-///PSEUDO-code explicatif (non-fonctionnel en javascript) algo des pates
-
-var pate = "pate"
-var eau = "eau"
-var feux = "feux"
-var casserole= "casserole"
+// exo transformer une var 5 x
 
 
-if casserole & eau & pate {
-    
-    if feux {
-        put eau + casserole
-    }
+// modif 1
+var log = "Notre var a pour valeur: "
+var x = 15
+y = 42
+x = x + y 
+console.log( "modif1: " + log + x  );
 
-    if eau + casserole + feux = True {
-        wait 5 min
-    }
+// modif 2
+var z = "string"
+x = x + z + y 
+console.log( "modif2: " + log + x  );
 
-    if(5 min = true){
-        return patte mangeable
-    }
-}
+// modif 3
+x = 87
+console.log( "modif3: " + log + x  );
+
+// modif 4
+x = x
+
+//modif 5 
+const etagere = [x,y,z]
+console.log("The last modif " + etagere)
+
+
+
+
