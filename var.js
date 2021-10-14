@@ -1,4 +1,5 @@
 
+console.log("var.js");
 
 
 // Code d'el Roliste
@@ -56,6 +57,44 @@ setInterval(ColorResult, 1)
 // getElementById('demo').innerHTML= page;
 
 
+
+// 1
+
+// var log = "test"
+var x = 9
+y = 50
+x = x + y
+console.log( "1" + log + x )
+
+// 2
+
+var z = "test"
+x = x + y + z
+console.log ("2" + log + x )
+
+// 3
+
+x = y - z
+console.log ("3" + log + x )
+
+// 4 
+
+x = y
+console.log ("4" + log + x )
+
+// 5
+
+x = 5
+console.log ("5" + log + x )
+
+
+
+var az = document.getElementById('demo');
+
+console.log(az)
+
+az.innerHTML = z
+
 function fun() {  
     alert("Bienvenue sur le site!");  
     }  
@@ -63,7 +102,7 @@ function fun() {
 
 
 
-console.log("var.js");
+
 /* Variables Emilie */
 
 /* Variable em */
@@ -187,6 +226,7 @@ x = x
 //modif 5 
 const etagere = [x,y,z]
 console.log("The last modif " + etagere)
+
 
 
 
