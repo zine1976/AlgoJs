@@ -5,20 +5,20 @@ console.log(start,page);
 
 // Code d'el Roliste
 var dice = [0,0];
-const change = document.getElementById('ResultDice');
+const changeRoll = document.getElementById('ResultDice');
 
 function Dice(){
     for (let test = 0; test < dice.length; test++) {
         dice[test] = Math.ceil(Math.random()*6);
     }
     var result = "Result of dice: "+dice.join(' ,');
-    change.innerHTML= result;
+    changeRoll.innerHTML= result;
 }
 
-change.onclick = function e() {
+// Code d'el Roliste Easter egg
+changeRoll.onclick = function e() {
     ColorDice()
 };
-
 function ColorDice(){
     var red = Math.ceil(Math.random()*256)-1;
     var green = Math.ceil(Math.random()*256)-1;
@@ -27,11 +27,12 @@ function ColorDice(){
     document.getElementById('button').style.backgroundColor = color;
 }
 
+
+// Code d'el Roliste Changement de la couleur des résultats
 var mode = 1;
 var rouge = 0;
 var vert = 255;
 var bleu = 0;
-
 function ColorResult(){
     if (mode == 1) {
         vert -= 1;
@@ -51,8 +52,7 @@ function ColorResult(){
         mode = 3;
     }
     var couleur = "rgb("+rouge+", "+vert+", "+bleu+")"
-    change.style.color = couleur;
+    changeRoll.style.color = couleur;
 }
-
 setInterval(ColorResult, 1)
 // getElementById('demo').innerHTML= page;
