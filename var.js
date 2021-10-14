@@ -1,4 +1,31 @@
 
+
+
+
+console.log("var.js");
+/* Variables Emilie */
+
+/* Variable em */
+var em= 5;
+console.log("variable em is:", em);
+
+/* Variable is */
+var is= em + 2;
+console.log("variable is is:", is);
+
+/* Variable aw */
+var aw = is * 4;
+console.log("variable aw is:", aw);
+
+/* Variable some */
+var some = aw / 4;
+console.log("variable some is:", some);
+
+/* Variable ness */
+var ness = some - 2;
+console.log("variable ness is:", ness);
+
+
 var log = "Voici le résultat :"
 
 var x = 15
@@ -99,6 +126,7 @@ x = x
 //modif 5 
 const etagere = [x,y,z]
 console.log("The last modif " + etagere)
+
 
 
 
