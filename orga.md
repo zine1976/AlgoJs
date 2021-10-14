@@ -2,7 +2,7 @@
 
 - [Guide MDN Javascript complet ](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide)
 
-- [w3school: training](http://w3school.org)
+- [w3school: training](https://www.w3schools.com/)
 
 ## Jour 1:
 
