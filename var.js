@@ -40,9 +40,9 @@ console.log(log, x);
 var z = " string "
 x = x + z
 
-console.log("modif2" + log + x)
+console.log("modif2" + log + x);
 
-var fkg =document.getElementById('fkg');
+var fkg = document.getElementById('fkg');
 console.log(fkg)
 fkg.innerHTML = log + z + x
 
@@ -51,8 +51,8 @@ fkg.innerHTML = log + z + x
 
 var clicked = document.getElementById('clickedd').onclick =
 function(e){
-    console.log("clicked :" +clickedd)
-    alert("mdr bien vu Neo")
+    console.log("clicked :" +clickedd);
+    alert("mdr bien vu Neo");
 }
 
 
