@@ -2,7 +2,7 @@
 // var page='<html><body><p id="demo"></p></body></html>';
 // console.log(start,page);
 
-
+console.log("var.js")
 
 // getElementById('demo').innerHTML= page;
 
