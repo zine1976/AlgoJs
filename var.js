@@ -24,7 +24,7 @@ function ColorDice(){
     var green = Math.ceil(Math.random()*256)-1;
     var blue = Math.ceil(Math.random()*256)-1;
     var color = "rgb("+red+", "+green+", "+blue+")"
-    document.getElementById('button').style.backgroundColor = color;
+    document.getElementById('buttonRoll').style.backgroundColor = color;
 }
 
 
