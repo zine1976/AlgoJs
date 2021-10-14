@@ -62,6 +62,7 @@
 # Ressources:
 
 **PSEUDO-code explicatif (non-fonctionnel en javascript) algo des pates**
+    
     ```javascript
         // on definit ce que l'on a besoins dans des variables
         var pate = "pate"
