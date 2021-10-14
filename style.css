@@ -1,6 +1,6 @@
 
 
-#clicked{
+.clicked{
   height: 50px;
   width: 10%;
   
@@ -13,5 +13,10 @@
 
 section{
   display: flex;
+}
+
+div img{
+  width: 75%;
+  height: auto;
 }
 

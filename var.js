@@ -9,7 +9,7 @@ console.log("var.js")
 
 // 1
 
-var log = "test"
+// var log = "test"
 var x = 9
 y = 50
 x = x + y
