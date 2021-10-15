@@ -5,6 +5,9 @@
 //        ecrire le mot     
 
 
+// Declaration variables
+
+
 
 
 // Code d'el Roliste
@@ -14,10 +17,14 @@ console.log(tableauRoll.join(' '));
 
 // Boucle Cristian for
 
+
 const blague = ["C'est", " l'histoire  ","du", "ptit dej",", tu","la","connais", "?"];
 const reponse =["Pas", "de","bol."];
 let question = "";
 let repo = "";
+var indice = 0;
+
+// Boucle Cristian for
 
 for (let i = 0; i < blague.length; i++) {
     question +=blague[i]+" ";
@@ -29,7 +36,23 @@ for (let i = 0; i < blague.length; i++) {
   }
   document.getElementById("answer").innerHTML = repo;
 
+
+// Boucle For element of Cristian
+
+
+
+
+// Boucle Akin
+const stor = ["Il", " était", " une fois", " un", "chat", " coincé"," dans"," un"," arbre","..."];
+let texto = "";
+
+for (let i = 0; i < stor.length; i++) {
+  texto += stor[i] + " ";
+}
+document.getElementById("stor").innerHTML = texto;
+
 // Boucle For element in Cristian
+
 
 for (elem of blague){
     document.write(elem+" ");
@@ -40,6 +63,53 @@ for (rep of reponse){
     document.write(rep+" ");
 }
 
+
+document.write("<br>");
+
+
+// Boucle for avec conditions - Cristian
+for (let i in blague){
+    if (i%2 == 0){
+        document.write("cet element a un indice pair "+"<b>"+blague[i]+"</b>"+"<br>")
+    }
+    else{
+        document.write("cet element a un indice impair "+"<b>"+blague[i]+"</b>"+"<br>")
+
+    }
+}
+// Boucle while
+while ( indice < reponse.length ) {
+    document.write("<b>"+reponse[indice]+"</b>"+"<br>")
+    indice++;
+    if(reponse[indice] == "bol.")
+    {
+        reponse.push("HAHAHA , tres bonne blague")
+    }
+}
+
+
+
+// Michel test
+
+const conte = ["Il", "était", "une", "fois"];
+let story = "";
+
+for (let i = 0; i < conte.length; i++) {
+  story +=conte[i]+" ";
+}
+document.getElementById("conte").innerHTML = story;
+
+
+// boucle PrBe
+
+const histoire = ["La", "princesse", "dans", "son", "chateau"];
+let mots = "";
+let n = 0;
+for (;n < histoire.length; n++){
+  mots += histoire[n] + " ";
+}
+
+document.getElementById("histoire").innerHTML = mots;
 
 // appel du fichier json via jquery /_!_\ ne pas toucher et ne pas tenir compte pour le moment /_!_\
 function loadJSON() {   
@@ -60,3 +130,5 @@ function loadJSON() {
 let dataloaded = loadJSON();
 let parseddata = JSON.parse(dataloaded);
 console.log(parsedata);
+
+
