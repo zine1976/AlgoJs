@@ -4,7 +4,7 @@
 //  pour chaque "mots" du "tableau":
 //        ecrire le mot     
 
-
+// Boucle Cristian
 
 const blague = ["C'est", " l'histoire  ","du", "ptit dej",", tu","la","connais", "?"];
 const reponse =["Pas", "de","bol."];
