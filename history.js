@@ -4,3 +4,8 @@
 //  pour chaque "mots" du "tableau":
 //        ecrire le mot     
 
+const histoire = ["Bonjour", "le ","groupe", "DWWM19"];
+
+for(let variable in histoire ){
+    document.write(variable);
+}
