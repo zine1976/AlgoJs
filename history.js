@@ -5,7 +5,7 @@
 //        ecrire le mot     
 
 
-// Boucle Cristian
+// Boucle Cristian for
 
 const blague = ["C'est", " l'histoire  ","du", "ptit dej",", tu","la","connais", "?"];
 const reponse =["Pas", "de","bol."];
@@ -22,3 +22,13 @@ for (let i = 0; i < blague.length; i++) {
   }
   document.getElementById("answer").innerHTML = repo;
 
+// Boucle For element in Cristian
+
+for (elem of blague){
+    document.write(elem+" ");
+}
+document.write("<br>");
+
+for (rep of reponse){
+    document.write(rep+" ");
+}
