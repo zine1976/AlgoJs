@@ -21,3 +21,9 @@ document.getElementById("char").innerHTML = string;
 document.getElementById("nombre").innerHTML = integer;
 document.getElementById("vraixfaux").innerHTML = bool;
 document.getElementById("celleci").innerHTML = variable;
+
+// Akin //
+const nombres = ["10","20","30","40","50","60","70","80","90","100"]
+const pronoms = ["Je ","Tu ","Il/Elle/On ","Nous ","Vous ","Ils/Elles"]
+document.getElementById("nombres").innerHTML = nombres;
+document.getElementById("pronoms").innerHTML = pronoms;
