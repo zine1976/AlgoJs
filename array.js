@@ -21,3 +21,9 @@ document.getElementById("char").innerHTML = string;
 document.getElementById("nombre").innerHTML = integer;
 document.getElementById("vraixfaux").innerHTML = bool;
 document.getElementById("celleci").innerHTML = variable;
+
+// Test tableau PrBe
+document.getElementById("mots").innerHTML = string;
+document.getElementById("chiffre").innerHTML = integer;
+document.getElementById("ouiounon").innerHTML = bool;
+document.getElementById("thisone").innerHTML = variable;

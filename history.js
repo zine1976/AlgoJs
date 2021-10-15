@@ -4,3 +4,4 @@
 //  pour chaque "mots" du "tableau":
 //        ecrire le mot     
 
+// tableau PrBe
