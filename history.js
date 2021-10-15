@@ -28,6 +28,18 @@ for (let i = 0; i < blague.length; i++) {
   }
   document.getElementById("answer").innerHTML = repo;
 
+
+
+
+// Boucle Akin
+const stor = ["Il", " était", " une fois", " un", "chat", " coincé"," dans"," un"," arbre","..."];
+let texto = "";
+
+for (let i = 0; i < stor.length; i++) {
+  texto += stor[i] + " ";
+}
+document.getElementById("stor").innerHTML = texto;
+
 // Boucle For element in Cristian
 
 for (elem of blague){
@@ -39,6 +51,7 @@ for (rep of reponse){
     document.write(rep+" ");
 }
 
+
 // Michel test
 
 const conte = ["Il", "était", "une", "fois"];
@@ -48,3 +61,17 @@ for (let i = 0; i < conte.length; i++) {
   story +=conte[i]+" ";
 }
 document.getElementById("conte").innerHTML = story;
+
+
+// boucle PrBe
+
+const histoire = ["La", "princesse", "dans", "son", "chateau"];
+let mots = "";
+let n = 0;
+for (;n < histoire.length; n++){
+  mots += histoire[n] + " ";
+}
+
+document.getElementById("histoire").innerHTML = mots;
+
+
