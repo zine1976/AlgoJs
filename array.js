@@ -12,8 +12,20 @@ const variable = [g1,g2,g3]
 
 
 
+
 document.getElementById("tab1").innerHTML = string;
 document.getElementById("tab2").innerHTML = integer;
 document.getElementById("tab3").innerHTML = bool;
 document.getElementById("tab4").innerHTML = variable;
+
+document.getElementById("string").innerHTML = string;
+document.getElementById("integer").innerHTML = integer;
+document.getElementById("bool").innerHTML = bool;
+document.getElementById("variable").innerHTML = variable;
+
+
+document.getElementById("char").innerHTML = string;
+document.getElementById("nombre").innerHTML = integer;
+document.getElementById("vraixfaux").innerHTML = bool;
+document.getElementById("celleci").innerHTML = variable;
 

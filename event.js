@@ -1,9 +1,15 @@
 
 console.log("event.js")
 
-var clicked = document.getElementById("clickedd").onclick =
+var clicked = document.getElementById("clicked").onclick =
 function(e){
     console.log("clickedd: " + clicked);
+    alert("Have you clicked");     
+}
+
+var clickedd = document.getElementById("clickedd").onclick =
+function(e){
+    console.log("clickedd: " + clickedd);
     alert("T'as perdu, faut donner 50€ via paypal à michelvilbert9@gmail.com");     
 }
 
@@ -12,19 +18,19 @@ function(e){
 
 
 
-var clicked = document.getElementById("clicked")
+var chris = document.getElementById("chris")
 
-clicked.onclick = function (e) {
+chris.onclick = function (e) {
     
-    if(clicked.style.backgroundColor=="green"){
-        clicked.style.background="blue";
+    if(chris.style.backgroundColor=="green"){
+        chris.style.background="blue";
        
     }
     else{
-        clicked.style.background="green";
+        chris.style.background="green";
     }
     
-    console.log("clicked: "+clicked);
+    console.log("clicked: "+ chris);
 
 
 }
