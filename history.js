@@ -39,3 +39,12 @@ for (rep of reponse){
     document.write(rep+" ");
 }
 
+// Michel test
+
+const histoire = ["Il", "était", "une", "fois"];
+let story = "";
+
+for (let i = 0; i < histoire.length; i++) {
+  story +=histoire[i]+" ";
+}
+document.getElementById("histoire").innerHTML = story;
