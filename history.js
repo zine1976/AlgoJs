@@ -22,3 +22,13 @@ for (let i = 0; i < blague.length; i++) {
   }
   document.getElementById("answer").innerHTML = repo;
 
+
+
+// Boucle Akin
+const stor = ["Il", " était", " une fois", " un", "chat", " coincé"," dans"," un"," arbre","..."];
+let texto = "";
+
+for (let i = 0; i < stor.length; i++) {
+  texto += stor[i] + " ";
+}
+document.getElementById("stor").innerHTML = texto;
