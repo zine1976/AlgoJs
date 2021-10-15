@@ -52,6 +52,17 @@ for (rep of reponse){
 }
 
 
+// Michel test
+
+const conte = ["Il", "était", "une", "fois"];
+let story = "";
+
+for (let i = 0; i < conte.length; i++) {
+  story +=conte[i]+" ";
+}
+document.getElementById("conte").innerHTML = story;
+
+
 // boucle PrBe
 
 const histoire = ["La", "princesse", "dans", "son", "chateau"];
