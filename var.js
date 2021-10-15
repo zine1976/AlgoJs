@@ -11,7 +11,7 @@ function Dice(){
     for (let test = 0; test < dice.length; test++) {
         dice[test] = Math.ceil(Math.random()*6);
     }
-    var result = "Result of dice: "+dice.join(' ,');
+    var result = "Result of dice: "+dice.join(', ');
     changeRoll.innerHTML= result;
 }
 
