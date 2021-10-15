@@ -32,3 +32,14 @@ document.write("<br>");
 for (rep of reponse){
     document.write(rep+" ");
 }
+
+// boucle PrBe
+
+const histoire = ["La", "princesse", "dans", "son", "chateau"];
+let mots = "";
+let n = 0;
+for (;n < histoire.length; n++){
+  mots += histoire[n] + " ";
+}
+
+document.getElementById("histoire").innerHTML = mots;
