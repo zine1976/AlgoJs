@@ -4,6 +4,7 @@
 //  pour chaque "mots" du "tableau":
 //        ecrire le mot     
 
+
 // Boucle Cristian
 
 const blague = ["C'est", " l'histoire  ","du", "ptit dej",", tu","la","connais", "?"];
@@ -20,3 +21,4 @@ for (let i = 0; i < blague.length; i++) {
     repo +=reponse[j]+" ";
   }
   document.getElementById("answer").innerHTML = repo;
+
