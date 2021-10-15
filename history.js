@@ -28,6 +28,18 @@ for (let i = 0; i < blague.length; i++) {
   }
   document.getElementById("answer").innerHTML = repo;
 
+
+
+
+// Boucle Akin
+const stor = ["Il", " était", " une fois", " un", "chat", " coincé"," dans"," un"," arbre","..."];
+let texto = "";
+
+for (let i = 0; i < stor.length; i++) {
+  texto += stor[i] + " ";
+}
+document.getElementById("stor").innerHTML = texto;
+
 // Boucle For element in Cristian
 
 for (elem of blague){
@@ -50,4 +62,5 @@ for (;n < histoire.length; n++){
 }
 
 document.getElementById("histoire").innerHTML = mots;
+
 
