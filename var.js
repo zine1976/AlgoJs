@@ -1,4 +1,6 @@
+// Code de Cristian
 
+console.log("var.js");
 
 
 // Code d'el Roliste
@@ -56,14 +58,63 @@ setInterval(ColorResult, 1)
 // getElementById('demo').innerHTML= page;
 
 
+
+// 1
+
+// var log = "test"
+var x = 9
+y = 50
+x = x + y
+console.log( "1" + log + x )
+
+// 2
+
+var z = "test"
+x = x + y + z
+console.log ("2" + log + x )
+
+// 3
+
+x = y - z
+console.log ("3" + log + x )
+
+// 4 
+
+x = y
+console.log ("4" + log + x )
+
+// 5
+
+x = 5
+console.log ("5" + log + x )
+
+
+
+var az = document.getElementById('demo');
+
+console.log(az)
+
+az.innerHTML = z
+
 function fun() {  
     alert("Bienvenue sur le site!");  
     }  
 
 
 
+console.log("var.js")
 
-console.log("var.js");
+var x = 15;
+var z = " Salut";
+var y = " DWWM19 "
+z += y;
+x += 15;
+x *= 3;
+x -= 2;
+x /= 2; 
+x += z;
+
+
 /* Variables Emilie */
 
 /* Variable em */
@@ -104,17 +155,19 @@ x = x + z
 console.log("modif2" + log + x);
 
 var fkg = document.getElementById('fkg');
-console.log(fkg)
-fkg.innerHTML = log + z + x
+console.log(fkg);
+fkg.innerHTML = log + z + x;
 
 
 // variable clicked
 
-var clicked = document.getElementById('clickedd').onclick =
+var clickeddd = document.getElementById('clickeddd').onclick =
 function(e){
-    console.log("clicked :" +clickedd);
+    console.log("clickeddd :" + clickeddd);
     alert("mdr bien vu Neo");
 }
+
+
 
 
 
@@ -189,6 +242,10 @@ const etagere = [x,y,z]
 console.log("The last modif " + etagere)
 
 
+
+console.log(x);
+
+document.getElementById('demo').innerHTML= x;
 
 
 
