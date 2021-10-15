@@ -18,7 +18,7 @@ document.getElementById("tab2").innerHTML = integer;
 document.getElementById("tab3").innerHTML = bool;
 document.getElementById("tab4").innerHTML = variable;
 
-=======
+
 // algo d'affichage d'emillie
 
 document.getElementById("string").innerHTML = string;
