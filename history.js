@@ -41,10 +41,10 @@ for (rep of reponse){
 
 // Michel test
 
-const histoire = ["Il", "était", "une", "fois"];
+const conte = ["Il", "était", "une", "fois"];
 let story = "";
 
-for (let i = 0; i < histoire.length; i++) {
-  story +=histoire[i]+" ";
+for (let i = 0; i < conte.length; i++) {
+  story +=conte[i]+" ";
 }
-document.getElementById("histoire").innerHTML = story;
+document.getElementById("conte").innerHTML = story;
