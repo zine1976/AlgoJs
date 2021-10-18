@@ -12,47 +12,65 @@
     <title>DWWM19-js-History</title>
   </head>
 <body>
+  <!-- Responsive navbar-->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+           <div class="container">
+               <a class="navbar-brand" href="#">Start Bootstrap</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                       <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                       <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                               <li><a class="dropdown-item" href="#">Action</a></li>
+                               <li><a class="dropdown-item" href="#">Another action</a></li>
+                               <li><hr class="dropdown-divider" /></li>
+                               <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+       <!-- Page content-->
+       <div class="container">
+           <div class="text-center mt-5">
+               <h1>Le début d'une grande aventure ....</h1>
+               <p class="lead">Pleine de rebondissement</p>
+               <p>L'entrée de l'Art Nack</p>
+           </div>
+           <section class="section-perso">
+             <h1>Les personnages & objects</h1>
+                <div id="perso" class="prez-perso"></div> <!-- exemple de div pour la présentation de votre personnage ou votre object -->
+                <div id="perso" class="prez-perso"></div> <!-- exemple de div pour la présentation de votre personnage ou votre object -->
+                <div id="perso" class="prez-perso"></div> <!-- exemple de div pour la présentation de votre personnage ou votre object -->
+                <div id="perso" class="prez-perso"></div> <!-- exemple de div pour la présentation de votre personnage ou votre object -->
+           </section>
+           <section>
+             <h2>Le contexte</h2>
+             <div id="context" class="contexte"></div>
+           </section>
+           <section>
+             <h2>Les interrractions</h2>
+             <div id="interact" class="interact"></div> <!-- exemple de div pour l'interaction les id pour injecter le js les class pour le css -->
+             <div id="interact" class="interact"></div>
+             <div id="interact" class="interact"></div>
+             <div id="interact" class="interact"></div>
+           </section>
 
-    <!-- boucle Cristian -->
-    <table style="border: 2px solid black">
-      <label><b>Cristian</b> </label>
-      <br>
-      <tr>
-        <label>Blague</label>
-        <p style="border: 2px solid black" id=blague></p>
-      </tr>
-      <tr>
-        <label>reponse</label>
-        <p style="border: 2px solid black" id=answer></p>
-      </tr>
-    </table>
 
-    <!-- histoire Michel -->
-      <label></label>
-      <p id="conte"></p>
 
-    <!-- boucle Akin-->
-    <br>
-    <br>
-    <label>Akin</label>
-    <br>
-    <table style="border: 2px solid black"></table>
-    <label>Exo boucle</label>
-    <p style="border: 2px solid black" id=stor></p>
-    </table>
-
-    <!-- histoire PrBe-->
-    <label>Histoire PrBe</label><br>
-    <p id="histoire"></p>
-
-    <label>Histoire des Objects</label><br>
-    <p id="history"></p>
+       </div>
+       <!-- Bootstrap core JS-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
   <script type="type/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- <script type="text/javascript" src="perso.js"></script> -->
   <script type="text/javascript" src="simpleperso.js"></script>
-  <script type="text/javascript" src="history.js"></script>
+  <!-- <script type="text/javascript" src="history.js"></script> -->
 
 </body>
 </html>
