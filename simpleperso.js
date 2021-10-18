@@ -22,7 +22,7 @@ class Personnage {
     defense(def){
         if(this.items == "Tarasque")
         {
-          return def+27;
+          return def+98;
         }
         else if(this.items != "Tarasque")
         {
@@ -42,7 +42,7 @@ class Personnage {
 }
 
 let monperso = new Personnage("Luna","Carry","Nova","Tarasque",150);
-console.log("Mon Perso s'appelle "+monperso.name + " c'est un " + monperso.category + " il possede l'item " + monperso.items + " donc sa defense passe a " + monperso.defense(30) + " ce qui lui permet de survire a l'attaque");
+console.log("Mon Perso s'appelle "+monperso.name + " c'est un " + monperso.category + " il possede l'item " + monperso.items + " donc sa defense passe a " + monperso.defense(39) + " ce qui lui permet de survire a l'attaque");
 
 
 class Perso {
