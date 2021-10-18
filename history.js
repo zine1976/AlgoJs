@@ -1,11 +1,34 @@
-// consigne ecrire un algoritme qui en bouclant sur un tableau de mot raconte une histoire 
-// exemple: 
+// consigne ecrire un algoritme qui en bouclant sur un tableau de mot raconte une histoire
+// exemple:
 //  tableau = "mots", "mots", "mots"
 //  pour chaque "mots" du "tableau":
-//        ecrire le mot     
+//        ecrire le mot
 
 
 // Declaration variables
+
+// object
+
+let x = 100
+
+const perso = {
+  name = "Sorken"; // proprietés
+  weight = 50;
+  année = 1435;
+  equipement = "DiamondSword";
+  shard = "MagicPsy";
+  pv =  x;
+  tasliman = false;
+
+ }
+
+
+
+// accesseurs
+alert(perso.name, perso.weight, perso.année, perso.equipement, perso.shard, perso.pv);
+
+
+
 
 
 
@@ -112,7 +135,7 @@ for (;n < histoire.length; n++){
 document.getElementById("histoire").innerHTML = mots;
 
 // appel du fichier json via jquery /_!_\ ne pas toucher et ne pas tenir compte pour le moment /_!_\
-function loadJSON() {   
+function loadJSON() {
 
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -123,12 +146,10 @@ function loadJSON() {
           }
     };
     xobj.open('GET', 'history.json'); // Replace 'appDataServices' with the path to your file
-    xobj.send();  
+    xobj.send();
  }
 
 
 let dataloaded = loadJSON();
 let parseddata = JSON.parse(dataloaded);
 console.log(parsedata);
-
-
