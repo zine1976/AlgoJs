@@ -1,30 +1,48 @@
 
-
-class Personage {
-    constructor(firstName, lastName, category, poids, rank, pv) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+class Personnage {
+    constructor(name, category, subcategory,items,pv) {
+        this.name = name;
         this.category = category;
-        this.poids = poids;
-        this.rank = rank;
+        this.subcategory = subcategory;
+        this.items = items;
         this.pv = pv;
     }
-    attaque(){
-        return 100;
+    attaque(atk){
+        if(this.items == "DivineRapier"){
+          return atk + 31; 
+        }
+        else if (this.items == "Aghanim")
+        {
+          return atk +20;
+        }
+        else if(this.items == "boots"){
+          return atk +7;
+        }
     }
-    defense(){
-        return 98;
+    defense(def){
+        if(this.items == "Tarasque")
+        {
+          return def+27;
+        }
+        else if(this.items != "Tarasque")
+        {
+          return def-15;
+        }
     }
-    mana(){
-        return 1000;
+    mana(mp){
+        if (this.items == "Bloodstone")
+        {
+          return mp + 25;
+        }
+        else if(this.items != "Bloodstone" )
+        {
+          return mp +2;
+        }
     }
 }
 
-let monperso = new Perso("Luna", "Selemene", "Blaider", 50, "General", 300)
-console.log(myperso);
-myperso.category="Raider";
-console.log(myperso);
-
+let monperso = new Personnage("Luna","Carry","Nova","Tarasque",150);
+console.log("Mon Perso s'appelle "+monperso.name + " c'est un " + monperso.category + " il possede l'item " + monperso.items + " donc sa defense passe a " + monperso.defense(30) + " ce qui lui permet de survire a l'attaque");
 
 
 class Perso {
@@ -44,17 +62,14 @@ anneeFormat() {
 }
 
 attaque(x){
-  return x +this.weight + 15;
+  return x + this.weight + 15;
 }
 
 }
 
+
+// Appel de class D'exemple !
 let myperso = new Perso("Sorken", 50, 1950, "diamond", "MagicPsy", 100, false);
-
-
-
-
-
 
 console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48));
 
