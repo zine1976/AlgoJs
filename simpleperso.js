@@ -20,26 +20,11 @@ class Personage {
     }
 }
 
-let myperso = new Perso("Luna", "Selemene", "Blaider", 50, "General", 300)
+let monperso = new Perso("Luna", "Selemene", "Blaider", 50, "General", 300)
 console.log(myperso);
 myperso.category="Raider";
 console.log(myperso);
 
-// const personnage = {
-//     firstName: "Luna",
-//     lastName: "Selemene",
-//     category: ["Blader" , "Rider"],
-//     poids:50,
-//     rank:"General",
-
-//     pv: function(x){
-//         return 10*x;
-//       }
-
-//   };
-
-// poids = personnage.poids;
-// poids=75;
 
 
 class Perso {
