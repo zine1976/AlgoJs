@@ -1,50 +1,3 @@
-
-class Personnage {
-    constructor(name, category, subcategory,items,pv) {
-        this.name = name;
-        this.category = category;
-        this.subcategory = subcategory;
-        this.items = items;
-        this.pv = pv;
-    }
-    attaque(atk){
-        if(this.items == "DivineRapier"){
-          return atk + 31; 
-        }
-        else if (this.items == "Aghanim")
-        {
-          return atk +20;
-        }
-        else if(this.items == "boots"){
-          return atk +7;
-        }
-    }
-    defense(def){
-        if(this.items == "Tarasque")
-        {
-          return def+98;
-        }
-        else if(this.items != "Tarasque")
-        {
-          return def-15;
-        }
-    }
-    mana(mp){
-        if (this.items == "Bloodstone")
-        {
-          return mp + 25;
-        }
-        else if(this.items != "Bloodstone" )
-        {
-          return mp +2;
-        }
-    }
-}
-
-let monperso = new Personnage("Luna","Carry","Nova","Tarasque",150);
-console.log("Mon Perso s'appelle "+monperso.name + " c'est un " + monperso.category + " il possede l'item " + monperso.items + " donc sa defense passe a " + monperso.defense(39) + " ce qui lui permet de survire a l'attaque");
-
-
 class Perso {
   constructor(name, weight, annee, equipement, shard, pv, talisman) {
       this.name = name;
@@ -70,19 +23,15 @@ attaque(x){
 
 // Appel de class D'exemple !
 let myperso = new Perso("Sorken", 50, 1950, "diamond", "MagicPsy", 100, false);
-
 document.getElementById("persoSorken").innerHTML=
-"Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48);
+"Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name;
 document.getElementById("sorkenName").innerHTML = myperso.name;
 // console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48));
+document.getElementById("interactSorken").innerHTML = "<br><strong> "+myperso.name + "</strong> attaque avec son épée de " + myperso.attaque(48);
 
 
 
 
-
-
-
-//   alert("Mon joueur s'appelle "+ personnage.firstName + " "+ personnage.lastName + " Il pese "+ personnage.poids+ "kg C'est un " + personnage.rank + " de l'armee du dieu Mene. C'est un " +personnage.category[0] +" ainsi qu'un "+personnage.category[1]   );
 
 // const perso = {
 //   name : "Sorken",
@@ -117,4 +66,3 @@ document.getElementById("sorkenName").innerHTML = myperso.name;
 // // accesseurs
 //
 // alert("Mon joueur s'appel "+perso.name + ", il pese " + weight + ",il est né en l'an " + perso.année+"et possede une "+perso.equipement+"Ainsi qu'un atout de type"+perso.shard+"il un nombre de pv égale a "+perso.pv);
-
