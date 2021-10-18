@@ -4,8 +4,8 @@
 .clickedd{
   height: 50px;
   width: 10%;
-  
-}  
+
+}
 
 *{
   margin: auto;
@@ -23,9 +23,9 @@ div img{
 
 
 div{
-    background: red;
-    border: solid black 1px;
-    margin: 0 40% 0 40%;
+    /* background: red; */
+    /* border: solid black 1px; */
+    /* margin: 0 40% 0 40%; */
 }
 
 /* div p{
@@ -36,4 +36,3 @@ div{
 div:hover{
     cursor: pointer;
 } */
-
