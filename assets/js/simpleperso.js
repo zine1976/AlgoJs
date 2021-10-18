@@ -23,31 +23,13 @@ attaque(x){
 
 // Appel de class D'exemple !
 let myperso = new Perso("Sorken", 50, 1950, "diamond", "MagicPsy", 100, false);
-
 document.getElementById("persoSorken").innerHTML=
-"Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48);
+"Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name;
 document.getElementById("sorkenName").innerHTML = myperso.name;
 // console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48));
+document.getElementById("interactSorken").innerHTML = "<br><strong> "+myperso.name + "</strong> attaque avec son épée de " + myperso.attaque(48);
 
 
-
-
-// Code Gregor
-class Roll {
-  constructor(name, age, power, sexe, weapon){
-    this.name = name;
-    this.age = age;
-    this.power = power;
-    this.sexe = sexe;
-    this.weapon = weapon;
-  }
-}
-
-var CharacterRoll = new Roll("Faily", 23, "Cryomancie", "homme", "Faux");
-console.log(CharacterRoll);
-var RollTextCharacter = "Salutations jeune paysan, je suis "+CharacterRoll.name+" un jeune mage de "+CharacterRoll.age+" ans usant de "+CharacterRoll.power+". Oseras-tu te mesurer à moi?"
-document.getElementById('Faily').innerHTML += RollTextCharacter;
-// Code Gregor
 
 
 
