@@ -29,6 +29,23 @@ console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso
 
 
 
+// Code Gregor
+class Roll {
+  constructor(name, age, power, sexe, weapon){
+    this.name = name;
+    this.age = age;
+    this.power = power;
+    this.sexe = sexe;
+    this.weapon = weapon;
+  }
+}
+
+var CharacterRoll = new Roll("Faily", 23, "Cryomancie", "homme", "Faux");
+console.log(CharacterRoll);
+var RollTextCharacter = "Salutations jeune paysan, je suis "+CharacterRoll.name+" un jeune mage de "+CharacterRoll.age+" ans usant de "+CharacterRoll.power+". Oseras-tu te mesurer à moi?"
+document.getElementById('Faily').innerHTML += RollTextCharacter;
+// Code Gregor
+
 
 
 // const perso = {
