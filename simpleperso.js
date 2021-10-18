@@ -1,5 +1,3 @@
-
-
 class Perso {
   constructor(name, weight, annee, equipement, shard, pv, talisman) {
       this.name = name;
@@ -17,17 +15,14 @@ anneeFormat() {
 }
 
 attaque(x){
-  return x +this.weight + 15;
+  return x + this.weight + 15;
 }
 
 }
 
+
+// Appel de class D'exemple !
 let myperso = new Perso("Sorken", 50, 1950, "diamond", "MagicPsy", 100, false);
-
-
-
-
-
 
 console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48));
 
