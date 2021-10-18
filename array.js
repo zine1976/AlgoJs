@@ -2,14 +2,42 @@
 var g1 = "groupe1"
 var g2 = "groupe2"
 var g3 = "groupe3"
+let trying = true;
 
 
-
-const string = ["rouge","vert","bleu"]
-const integer = [21,42,84]
+// const string = ["rouge","vert","bleu"]
+const numeric = [21,42,84]
 const bool = [true, false, null]
 const variable = [g1,g2,g3]
 
+
+//condition if else if
+
+if(typeof numeric == integer){
+    alert("integer");
+} else if(typeof numeric == string) {
+    alert("notype detected");
+} else if(typeof numeric == undefined ){
+    alert("undefided");
+} else {
+    alert("something wrong");
+}
+
+// switch case
+
+switch(typeof trying == bool){
+    case x:
+        console.log("x is here");
+    break;
+    
+    case y:
+        console.log("y is here");
+    break;
+
+    default:
+        console.log("something wrong");
+
+}
 
 // tableaux cristian
 
@@ -51,6 +79,13 @@ document.getElementById("ta2").innerHTML = integer;
 document.getElementById("ta3").innerHTML = bool;
 document.getElementById("ta4").innerHTML = variable;
 
+
+
+
+// Code d'el Roliste
+var textRoll = `Il était une lapine, qui un matin, c'est levée en voulant une carrote. "Oh, je voudrais tant manger votre carotte Monsieur!" dit-elle à un passant. Alors, le passant sorti sa carrote en lui précisant bien "Savoure petite, je te donne volontier ma grosse carotte". Ainsi, c'est avec le ventre bien plein que la jeune lapine commença la journée.`
+var tableauRoll = textRoll.split(' ');
+console.log(tableauRoll.join(' '));
 
 
 
