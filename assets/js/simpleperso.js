@@ -23,12 +23,11 @@ attaque(x){
 
 // Appel de class D'exemple !
 let myperso = new Perso("Sorken", 50, 1950, "diamond", "MagicPsy", 100, false);
-
 document.getElementById("persoSorken").innerHTML=
-"Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48);
+"Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name;
 document.getElementById("sorkenName").innerHTML = myperso.name;
 // console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48));
-
+document.getElementById("interactSorken").innerHTML = "<br><strong> "+myperso.name + "</strong> attaque avec son épée de " + myperso.attaque(48);
 
 
 
