@@ -71,23 +71,28 @@ avatar.presentation();
 avatar.changePropertie(avatar, "name_jm", "Goku");
 avatar.destroy(myperso);
 
+// Code personnage Michel
 
-// Code Gregor
-class Roll {
-  constructor(name, age, power, sexe, weapon){
-    this.name = name;
-    this.age = age;
-    this.power = power;
-    this.sexe = sexe;
-    this.weapon = weapon;
+class random {
+  constructor(name, age, equipement, passive, pv) {
+            this.name = name;
+            this.age = age;
+            this.equipement = equipement;
+            this.passive = passive;
+            this.pv = pv;
+
+            
+    }
   }
-}
 
-var CharacterRoll = new Roll("Faily", 23, "Cryomancie", "homme", "Faux");
-console.log(CharacterRoll);
-var RollTextCharacter = "Salutations jeune paysan, je suis "+CharacterRoll.name+" un jeune mage de "+CharacterRoll.age+" ans usant de "+CharacterRoll.power+". Oseras-tu te mesurer à moi?"
-document.getElementById('Faily').innerHTML += RollTextCharacter;
-// Code Gregor
+let randomhero = new random("Worgen", 20, "Cloves", "Force surnaturelle", "150");
+document.getElementById("Wolf").innerHTML=
+"Mon personnage a " + randomhero.age + " Il s'appelle " + randomhero.name + " Et il possède " + randomhero.passive;
+
+
+
+
+
 
 
 // classe Perso PrBe
