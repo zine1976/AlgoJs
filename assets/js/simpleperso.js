@@ -66,7 +66,7 @@ class Avatar{
       target.pv = 0;
   }
 }
->>>>>>> edf5af22f4653e542a61591f409f297b26488fc8
+
 
 var avatar = new Avatar("Goku");
 avatar.presentation();
@@ -74,6 +74,17 @@ avatar.changePropertie(avatar, "name_jm", "Goku");
 avatar.destroy(myperso);
 
 // Code personnage Michel
+
+
+
+// Code Gregor
+class Roll {
+  constructor(name, age, power, sexe, weapon){
+    this.name = name;
+    this.age = age;
+    this.power = power;
+    this.sexe = sexe;
+    this.weapon = weapon;
 
 class random {
   constructor(name, age, equipement, passive, pv) {
@@ -83,8 +94,9 @@ class random {
             this.passive = passive;
             this.pv = pv;
 
-            
+
     }
+
   }
 
 let randomhero = new random("Worgen", 20, "Cloves", "Force surnaturelle", "150");
@@ -112,7 +124,9 @@ document.getElementById("interactAzerty").innerHTML = "<br><strong> "+myazerty.n
 
 
 
-//Le perso de Cristian 
+
+//Le perso de Cristian
+
 class Personnage {
   constructor(name, category, monture, items, pv) {
     this.name = name;
@@ -152,6 +166,7 @@ class Personnage {
   }
 }
 
+
 var tableauItems=["DivineRapier", "Aghanim","Tarasque","Bloodstone"];
 var indiceRandom =Math.floor(Math.random() * (tableauItems.length - 0)) + 0
 document.write(indiceRandom)
@@ -169,41 +184,11 @@ else {
   document.getElementById("luna-interact").innerHTML = "Ne pouvant pas se defendre Luna lance une derniere attaque de " + monperso.attaque(98);
 }
 
+
 // FIN PERSO CRISTIAN
 
-// const perso = {
-//   name : "Sorken",
-//   weight : 50,
-//   année : 1435,
-//   equipement :["diamond", "argent", "fer"],
-//   shard : "MagicPsy",
-//   pv :  100,
-//   tasliman : false
-//
-// };
-//
-//
-// let diamond = "diamond";
-// let argent = "argent";
-// let fer = "fer";
-//
-// if (perso.equipement == "diamond"){
-//   weight = perso.weight + 15;
-// } else if (perso.equipement == "argent"){
-//   weight = perso.weight + 10;
-// } else if(perso.equipement == "fer" ){
-//   weight = perso.weight + 5;
-// } else {
-//   weight = perso.weight;
-// }
-//
-//
-//
-// equipement = perso.equipement = "argent";
-//
-// // accesseurs
-//
-// alert("Mon joueur s'appel "+perso.name + ", il pese " + weight + ",il est né en l'an " + perso.année+"et possede une "+perso.equipement+"Ainsi qu'un atout de type"+perso.shard+"il un nombre de pv égale a "+perso.pv);
+
+
 
 // classe Perso PrBe
 class Bonhomme{
@@ -221,4 +206,3 @@ class Bonhomme{
 var mybonhomme = new Bonhomme("Bonhomme", 100, 5, 10, 15, true);
 var textbonhomme ="Ce perso s'appelle "+ mybonhomme.Nom + " Voici ses stats : " + mybonhomme.vie + "Pv " + mybonhomme.armure + " d'armure " + mybonhomme.attaque + " de dégâts.";
 document.getElementById('presentation').innerHTML = textbonhomme;
-
