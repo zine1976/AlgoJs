@@ -85,6 +85,8 @@ body #bloc_section{
     word-wrap: break-word;
 }
 
+
+
 #bloc_section > section{
     border: 1px solid red;
     width: 30%;
