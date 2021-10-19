@@ -1,45 +1,6 @@
 
-class Personnage {
-    constructor(name, category, subcategory,items,pv) {
-        this.name = name;
-        this.category = category;
-        this.subcategory = subcategory;
-        this.items = items;
-        this.pv = pv;
-    }
-    attaque(atk){
-        if(this.items == "DivineRapier"){
-          return atk + 31; 
-        }
-        else if (this.items == "Aghanim")
-        {
-          return atk +20;
-        }
-        else if(this.items == "boots"){
-          return atk +7;
-        }
-    }
-    defense(def){
-        if(this.items == "Tarasque")
-        {
-          return def+98;
-        }
-        else if(this.items != "Tarasque")
-        {
-          return def-15;
-        }
-    }
-    mana(mp){
-        if (this.items == "Bloodstone")
-        {
-          return mp + 25;
-        }
-        else if(this.items != "Bloodstone" )
-        {
-          return mp +2;
-        }
-    }
-}
+
+    
 
 let monperso = new Personnage("Luna","Carry","Nova","Tarasque",150);
 console.log("Mon Perso s'appelle "+monperso.name + " c'est un " + monperso.category + " il possede l'item " + monperso.items + " donc sa defense passe a " + monperso.defense(39) + " ce qui lui permet de survire a l'attaque");
