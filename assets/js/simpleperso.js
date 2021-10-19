@@ -54,7 +54,7 @@ class Avatar{
   changePropertie(target, propertie, value){
     if (target.hasOwnProperty(propertie)){
       target[propertie] = value;
-      
+
       var elem = document.getElementById(propertie);
       if (elem)
         elem.innerHTML = value;
@@ -85,7 +85,7 @@ class random {
     }
   }
 
-let randomhero = new random("Worgen", 20, "Cloves", "Régeneration", "150");
+let randomhero = new random("Worgen", 20, "Cloves", "Force surnaturelle", "150");
 document.getElementById("Wolf").innerHTML=
 "Mon personnage a " + randomhero.age + " Il s'appelle " + randomhero.name + " Et il possède " + randomhero.passive;
 
@@ -95,6 +95,19 @@ document.getElementById("Wolf").innerHTML=
 
 
 
+// classe Perso PrBe
+class Bonhomme{
+  constructor(nom, vie, armure, attaque, vitesse, vivant){
+      this.Nom = nom
+      this.vie = vie;
+      this.armure = armure;
+      this.attaque = attaque;
+      this.vitesse = vitesse;
+      this.vivant = vivant;
+  }
 
+}
 
-
+var mybonhomme = new Bonhomme("Bonhomme", 100, 5, 10, 15, true);
+var textbonhomme ="Ce perso s'appelle "+ mybonhomme.Nom + " Voici ses stats : " + mybonhomme.vie + "Pv " + mybonhomme.armure + " d'armure " + mybonhomme.attaque + " de dégâts.";
+document.getElementById('presentation').innerHTML = textbonhomme;

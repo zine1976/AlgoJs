@@ -64,20 +64,3 @@ console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso
 // // accesseurs
 //
 // alert("Mon joueur s'appel "+perso.name + ", il pese " + weight + ",il est né en l'an " + perso.année+"et possede une "+perso.equipement+"Ainsi qu'un atout de type"+perso.shard+"il un nombre de pv égale a "+perso.pv);
-
-// classe Perso PrBe
-class bonhomme{
-  constructor(Nom, vie, armure, attaque, vitesse, vivant){
-      this.Nom = Nom
-      this.vie = vie;
-      this.armure = armure;
-      this.attaque = attaque;
-      this.vitesse = vitesse;
-      this.vivant = vivant;
-  }
-  
-}
-
-var mybonhomme = new bonhomme("Bonhomme", 100, 5, 10, 15, true);
-var Textbonhomme =(`Ce perso s'appelle ${mybonhomme.Nom} Voici ses stats : ${mybonhomme.vie}Pv${mybonhomme.armure} d'armure ${mybonhomme.attaque} de dégâts.`)
-document.getElementById(Presentation).innerHTML = Textbonhomme;
