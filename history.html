@@ -1,96 +1,76 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/history.css">
     <title>DWWM19-js-History</title>
   </head>
-<body>
-  <!-- Responsive navbar-->
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-           <div class="container">
-               <a class="navbar-brand" href="#">Start Bootstrap</a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                       <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                       <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                       <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                               <li><a class="dropdown-item" href="#">Action</a></li>
-                               <li><a class="dropdown-item" href="#">Another action</a></li>
-                               <li><hr class="dropdown-divider" /></li>
-                               <li><a class="dropdown-item" href="#">Something else here</a></li>
-                           </ul>
-                       </li>
-                   </ul>
-               </div>
-           </div>
-       </nav>
-       <!-- Page content-->
-       <div class="container">
-           <div class="text-center mt-5">
-               <h1>Le début d'une grande aventure ....</h1>
-               <p class="lead">Pleine de rebondissement</p>
-               <p>L'entrée de l'Art Nack</p>
-           </div>
-           <section class="col-lg-12">
-             <div class="text-center">
-               <h1>Les personnages & objects</h1>
-               <br>
-               <!-- carte prez sorken -->
-               <div class="card" style="width: 18rem;"> <!-- exemple de carte de présentation de vos persos -->
-                 <img class="card-img-top" src="assets/img/sorken.png" alt="Card image cap">
-                 <div class="card-body">
-                   <h5 id="sorkenName" class="card-title"></h5>
-                   <p id="persoSorken" class="prez-perso card-text"> </p>
-                 </div>
-               </div>
-               <!-- FIN carte prez sorken -->
+  <body>
+    <div id="bloc_page">
+      <header>
+        <nav class="flex_row">
+          <a href="#">Coded</a>
+          <a href="#">By</a>
+          <a href="#">J</a>
+          <a href="#">M</a>
+        </nav>
+      </header>
 
-                <div id="perso" class="prez-perso"></div> <!-- exemple de div pour la présentation de votre personnage ou votre object -->
-                <div id="perso" class="prez-perso"></div> <!-- exemple de div pour la présentation de votre personnage ou votre object -->
-                <div id="perso" class="prez-perso"></div> <!-- exemple de div pour la présentation de votre personnage ou votre object -->
-           </section>
+      <div id="bloc_presentation">
+        <h1>Le début d'une grande aventure .... <span>Pleine de rebondissement</span></h1>
+        <p>L'entrée de l'Art Nack</p>
+      </div>
 
-           <section>
-             <h2>Le contexte</h2>
-             <div id="context" class="contexte"></div>
-           </section>
+      <div id="bloc_section" class="flex_row">
 
-           <section class="section col-lg-12 text-center p-2">
-             <h2>Les interrractions</h2>
-             <!-- div d'interaction d'exemple -->
-             <div id="interact" class="interact">
-               <div class="card">
-                <div id="interactSorken" class="card-body">
-                </div>
-              </div>
+      <!-- section Julien -->
+        <section id="section_jm" class="flex_row">
+          <figure class="flex_defaultcolumn">
+            <img src="./assets/img/goku.png" alt="Goku" >
+            <nav>
+              <p id="name_jm">No data</p>
+            </nav>
+          </figure>
+          <div>
+            <h2>Informations du perso:</h2>
+            <p id="description_jm">No data</p>
+          </div>
+        </section>
 
-             </div> <!-- exemple de div pour l'interaction les id pour injecter le js les class pour le css -->
-             <div id="interact" class="interact"></div>
-             <div id="interact" class="interact"></div>
-             <div id="interact" class="interact"></div>
-           </section>
+    <!-- section jm -->
+        <section id="section_julien" class="flex_row">
+            <figure class="flex_defaultcolumn">
+              <img src="./assets/img/sorken.png" alt="Sorken" />
+              <nav>
+                <p id="name_julien">No data</p>
+              </nav>
+            </figure>
+            <div>
+              <h2>Informations du perso:</h2>
+              <p id="description_julien">No data</p>
+            </div>
+        </section>
 
+      <!-- section ... -->
+        <section class="flex_row">
+            <figure class="flex_defaultcolumn">
+              <img src="./assets/img/who.png" alt="who?" />
+              <nav>
+                <p id="p_description">No data</p>
+              </nav>
+            </figure>
+            <div>
+              <h2>Informations du perso:</h2>
+              <p>No data</p>
+            </div>
+        </section>
 
+      </div>
+    </div>
 
-       </div>
-       <!-- Bootstrap core JS-->
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-  <!-- <script type="type/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-  <script type="text/javascript" src="assets/js/simpleperso.js"></script>
-  <!-- <script type="text/javascript" src="perso.js"></script> -->
-  <!-- <script type="text/javascript" src="history.js"></script> -->
-
-</body>
+    <!-- <script type="type/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script type="text/javascript" src="./assets/js/simpleperso.js"></script>
+    <!-- <script type="text/javascript" src="history.js"></script> -->
+  </body>
 </html>

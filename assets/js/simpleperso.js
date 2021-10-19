@@ -1,3 +1,4 @@
+/* Partie Julien */
 class Perso {
   constructor(name, weight, annee, equipement, shard, pv, talisman) {
       this.name = name;
@@ -9,28 +10,68 @@ class Perso {
       this.talisman = talisman;
   }
 
-anneeFormat() {
-  let date = new Date();
-  return date.getFullYear() - this.annee;
+  anneeFormat() {
+    let date = new Date();
+    return date.getFullYear() - this.annee;
+  }
+
+  attaque(x){
+    return x + this.weight + 15;
+  }
 }
 
-attaque(x){
-  return x + this.weight + 15;
-}
-
-}
-
-
-// Appel de class D'exemple !
 let myperso = new Perso("Sorken", 50, 1950, "diamond", "MagicPsy", 100, false);
-document.getElementById("persoSorken").innerHTML=
-"Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name;
-document.getElementById("sorkenName").innerHTML = myperso.name;
-// console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48));
-document.getElementById("interactSorken").innerHTML = "<br><strong> "+myperso.name + "</strong> attaque avec son épée de " + myperso.attaque(48);
 
+document.getElementById("name_julien").innerHTML = myperso.name;
+document.getElementById("description_julien").innerHTML = "<br><strong> "+myperso.name + "</strong> attaque avec son épée de " + myperso.attaque(48) +
+"<br><br><strong>" + myperso.name + "</strong> a " + myperso.anneeFormat() + " année terrestre";
 
+/* Partie J-M */
+class Avatar{
+  constructor(name, weapon = "kamehameha", pv = 1000){
+    this.name_jm = name;
+    this.weapon = weapon;
+    this.pv = pv;
+    this.presentation = function(){
+      var elem = document.getElementById("description_jm");
+      if (elem)
+        elem.innerHTML = "<b>Goku</b> est ultra <span style=\"color:green\">vif</span> et fume <span style=\"color:green\">tout l'monde</span> j'veux rien savoir";
+    }
+  }
+  attaqueDefault(target){
+    if (target.hasOwnProperty('pv'))
+      target.pv -= 20;
+  }
+  attaqueCombine(target){
+    if (target.hasOwnProperty('pv'))
+      target.pv -= 35;
+  }
+  /*  - change la propriété quand elle existe du
+          perso ciblé
+      - change également ma propriété sur <p id="name_jm"> car je l'ai appelé de
+          la même façon que ma variable, voir plus haut
+  */
+  changePropertie(target, propertie, value){
+    if (target.hasOwnProperty(propertie)){
+      target[propertie] = value;
+      
+      var elem = document.getElementById(propertie);
+      if (elem)
+        elem.innerHTML = value;
+    }
+  }
+  destroy(target){
+    if (target.hasOwnProperty('pv'))
+      target.pv = 0;
+  }
+}
 
+var avatar = new Avatar("Goku");
+avatar.presentation();
+avatar.changePropertie(avatar, "name_jm", "Goku");
+avatar.destroy(myperso);
+
+/* */
 
 
 // const perso = {
