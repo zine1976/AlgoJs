@@ -31,8 +31,5 @@ chris.onclick = function (e) {
     }
     
     console.log("clicked: "+ chris);
-
-
 }
-
 
