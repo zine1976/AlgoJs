@@ -24,10 +24,7 @@ attaque(x){
 // Appel de class D'exemple !
 let myperso = new Perso("Sorken", 50, 1950, "diamond", "MagicPsy", 100, false);
 
-document.getElementById("persoSorken").innerHTML=
-"Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48);
-document.getElementById("sorkenName").innerHTML = myperso.name;
-// console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48));
+console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48));
 
 
 
@@ -67,3 +64,20 @@ document.getElementById("sorkenName").innerHTML = myperso.name;
 // // accesseurs
 //
 // alert("Mon joueur s'appel "+perso.name + ", il pese " + weight + ",il est né en l'an " + perso.année+"et possede une "+perso.equipement+"Ainsi qu'un atout de type"+perso.shard+"il un nombre de pv égale a "+perso.pv);
+
+// classe Perso PrBe
+class bonhomme{
+  constructor(Nom, vie, armure, attaque, vitesse, vivant){
+      this.Nom = Nom
+      this.vie = vie;
+      this.armure = armure;
+      this.attaque = attaque;
+      this.vitesse = vitesse;
+      this.vivant = vivant;
+  }
+  
+}
+
+var mybonhomme = new bonhomme("Bonhomme", 100, 5, 10, 15, true);
+var Textbonhomme =(`Ce perso s'appelle ${mybonhomme.Nom} Voici ses stats : ${mybonhomme.vie}Pv${mybonhomme.armure} d'armure ${mybonhomme.attaque} de dégâts.`)
+document.getElementById(Presentation).innerHTML = Textbonhomme;
