@@ -30,6 +30,29 @@ document.getElementById("sorkenName").innerHTML = myperso.name;
 document.getElementById("interactSorken").innerHTML = "<br><strong> "+myperso.name + "</strong> attaque avec son épée de " + myperso.attaque(48);
 
 
+// Code personnage Michel
+
+class random {
+  constructor(name, age, equipement, passive, pv) {
+            this.name = name;
+            this.age = age;
+            this.equipement = equipement;
+            this.passive = passive;
+            this.pv = pv;
+
+            
+    }
+  }
+
+let randomhero = new random("Worgen", 20, "Cloves", "Régeneration", "150");
+document.getElementById("Wolf").innerHTML=
+"Mon personnage a " + randomhero.age + " Il s'appelle " + randomhero.name + " Et il possède " + randomhero.passive;
+
+
+
+
+
+
 
 
 
