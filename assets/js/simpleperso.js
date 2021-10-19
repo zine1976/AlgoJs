@@ -15,6 +15,7 @@ class Perso {
     return date.getFullYear() - this.annee;
   }
 
+
   attaque(x){
     return x + this.weight + 15;
   }
@@ -65,6 +66,7 @@ class Avatar{
       target.pv = 0;
   }
 }
+
 
 var avatar = new Avatar("Goku");
 avatar.presentation();
@@ -124,6 +126,7 @@ document.getElementById("interactAzerty").innerHTML = "<br><strong> "+myazerty.n
 
 
 //Le perso de Cristian
+
 class Personnage {
   constructor(name, category, monture, items, pv) {
     this.name = name;
@@ -180,7 +183,10 @@ if(monperso.items == "Tarasque")
 else {
   document.getElementById("luna-interact").innerHTML = "Ne pouvant pas se defendre Luna lance une derniere attaque de " + monperso.attaque(98);
 }
+
+
 // FIN PERSO CRISTIAN
+
 
 
 
