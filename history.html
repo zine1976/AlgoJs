@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/history.css">
-    <title>DWWM19-js-History</title>
-  </head>
   <body>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./assets/css/history.css">
+      <title>DWWM19-js-History</title>
+    </head>
     <div id="bloc_page">
       <header>
         <nav class="flex_row">
@@ -30,13 +30,24 @@
                 <!--classe PrBe-->
                 <div id="presentation" class="prez-perso"></div> <!-- exemple de div pour la présentation de votre personnage ou votre object -->
                 <!--Fin PrBe-->
-                <div id="perso" class="prez-perso"></div> <!-- exemple de div pour la présentation de votre personnage ou votre object -->
-           </section>
+
 
            <section>
              <h2>Le contexte</h2>
              <div id="context" class="contexte">Arriver de par delà les terres, nos jeunes héros participent à un grand tournoi, parfois contre leurs volonté.</div>
            </section>
+
+
+
+      <!-- Debut  carte Luna -->
+       <div  class="perso-Cristian">
+         <img class="img-cristian" src="./assets/img/luna.png" alt="je te choisi!">
+         <div class="card-texte-luna">
+             <h5 id="lunaname" class="titre-luna"></h5>
+             <p id="persoLuna" class="Luna-texte"> </p>
+         </div>
+         </div>
+       </div> <!-- exemple de div pour la présentation de votre personnage ou votre object -->
 
 
       <!-- section Julien -->
@@ -66,6 +77,27 @@
               <p id="description_julien">No data</p>
             </div>
         </section>
+
+           <section class="section col-lg-12 text-center p-2">
+             <h2>Les interrractions</h2>
+             <!-- div d'interaction d'exemple -->
+             <div id="interact" class="interact">
+               <div class="card">
+                <div id="interactSorken" class="card-body">
+                </div>
+              </div>
+             </div>
+              <!--Debut code Cristian -->
+             <div class="card-texte-luna">
+              <div id="luna-interact" class="interact"></div>
+             </div>
+             <!--Fin code Cristian -->
+
+             </div>
+             <div id="interact" class="interact"></div>
+             <div id="interact" class="interact"></div>
+           </section>
+
 
       <!-- section ... -->
         <section class="flex_row">

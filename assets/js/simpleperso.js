@@ -1,13 +1,13 @@
 /* Partie Julien */
 class Perso {
   constructor(name, weight, annee, equipement, shard, pv, talisman) {
-      this.name = name;
-      this.weight = weight;
-      this.annee = annee;
-      this.equipement = equipement;
-      this.shard = shard;
-      this.pv = pv;
-      this.talisman = talisman;
+    this.name = name;
+    this.weight = weight;
+    this.annee = annee;
+    this.equipement = equipement;
+    this.shard = shard;
+    this.pv = pv;
+    this.talisman = talisman;
   }
 
   anneeFormat() {
@@ -72,6 +72,7 @@ avatar.changePropertie(avatar, "name_jm", "Goku");
 avatar.destroy(myperso);
 
 
+
 // Code Gregor
 class Roll {
   constructor(name, age, power, sexe, weapon){
@@ -88,6 +89,75 @@ console.log(CharacterRoll);
 var RollTextCharacter = "Salutations jeune paysan, je suis "+CharacterRoll.name+" un jeune mage de "+CharacterRoll.age+" ans usant de "+CharacterRoll.power+". Oseras-tu te mesurer à moi?"
 document.getElementById('Faily').innerHTML += RollTextCharacter;
 // Code Gregor
+
+// Appel de class D'exemple !
+let myperso = new Perso("Sorken", 50, 1950, "diamond", "MagicPsy", 100, false);
+document.getElementById("persoSorken").innerHTML =
+  "Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name;
+document.getElementById("sorkenName").innerHTML = myperso.name;
+// console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso.name + "et il lance une attaque avec son épée de " + myperso.attaque(48));
+document.getElementById("interactSorken").innerHTML = "<br><strong> " + myperso.name + "</strong> attaque avec son épée de " + myperso.attaque(48);
+
+
+//Le perso de Cristian
+class Personnage {
+  constructor(name, category, monture, items, pv) {
+    this.name = name;
+    this.category = category;
+    this.monture = monture;
+    this.items = items;
+    this.pv = pv;
+  }
+
+
+  attaque(atk) {
+    if (this.items == "DivineRapier") {
+      return atk + 31;
+    }
+    else if (this.items == "Aghanim") {
+      return atk + 20;
+    }
+    else  {
+      return atk + 7;
+    }
+  }
+  defense(def) {
+    if (this.items == "Tarasque") {
+      return def + 98;
+    }
+    else if (this.items != "Tarasque") {
+      return def - 15;
+    }
+  }
+  mana(mp) {
+    if (this.items == "Bloodstone") {
+      return mp + 25;
+    }
+    else if (this.items != "Bloodstone") {
+      return mp + 2;
+    }
+  }
+}
+
+
+var tableauItems=["DivineRapier", "Aghanim","Tarasque","Bloodstone"];
+var indiceRandom =Math.floor(Math.random() * (tableauItems.length - 0)) + 0
+document.write(indiceRandom)
+
+let monperso = new Personnage("Luna", "Rider", "Nova", tableauItems[indiceRandom], 150);
+
+document.getElementById("persoLuna").innerHTML = "Mon Perso est " + monperso.name + " c'est un " + monperso.category + " sa monture s'appelle " + monperso.monture +" son equipement est  : " + monperso.items;
+document.getElementById("lunaname").innerHTML = monperso.name;
+
+if(monperso.items == "Tarasque")
+{
+  document.getElementById("luna-interact").innerHTML = " Grace a son item  Tarasque <br><strong> " + monperso.name + "</strong> recoit + 98 defense, sa defense passe a " + monperso.defense(50) +" elle survit a l'attaque ";
+}
+else {
+  document.getElementById("luna-interact").innerHTML = "Ne pouvant pas se defendre Luna lance une derniere attaque de " + monperso.attaque(98);
+}
+// FIN PERSO CRISTIAN
+
 
 
 // classe Perso PrBe
