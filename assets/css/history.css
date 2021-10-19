@@ -146,3 +146,8 @@ body #bloc_section{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
+
+
+#section_akin{
+    background-color:gray !important;
+}
