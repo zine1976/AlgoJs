@@ -1,5 +1,5 @@
 
-// export {inputed, getInputValue, Perso};
+export {Perso};
 
 
 
