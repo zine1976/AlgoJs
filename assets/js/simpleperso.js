@@ -71,6 +71,8 @@ avatar.presentation();
 avatar.changePropertie(avatar, "name_jm", "Goku");
 avatar.destroy(myperso);
 
+// Code personnage Michel
+
 
 
 // Code Gregor
@@ -81,14 +83,42 @@ class Roll {
     this.power = power;
     this.sexe = sexe;
     this.weapon = weapon;
+
+class random {
+  constructor(name, age, equipement, passive, pv) {
+            this.name = name;
+            this.age = age;
+            this.equipement = equipement;
+            this.passive = passive;
+            this.pv = pv;
+
+
+    }
+
+  }
+
+let randomhero = new random("Worgen", 20, "Cloves", "Force surnaturelle", "150");
+document.getElementById("Wolf").innerHTML=
+"Mon personnage a " + randomhero.age + " Il s'appelle " + randomhero.name + " Et il possède " + randomhero.passive;
+
+
+
+
+
+
+// class Akin
+class Azerty {
+  constructor(name, genre, pv, equipement) {
+      this.name = name;
+      this.genre = genre;
+      this.pv = pv;
+      this.equipement = equipement;
   }
 }
-
-var CharacterRoll = new Roll("Faily", 23, "Cryomancie", "homme", "Faux");
-console.log(CharacterRoll);
-var RollTextCharacter = "Salutations jeune paysan, je suis "+CharacterRoll.name+" un jeune mage de "+CharacterRoll.age+" ans usant de "+CharacterRoll.power+". Oseras-tu te mesurer à moi?"
-document.getElementById('Faily').innerHTML += RollTextCharacter;
-// Code Gregor
+let myazerty = new Azerty("Azerty", "gorille", 200, "M4");
+document.getElementById("persoAzerty").innerHTML= "Mon perso est un " + myazerty.genre + ", on le nomme " + myazerty.name;
+document.getElementById("azertyName").innerHTML = myazerty.name;
+document.getElementById("interactAzerty").innerHTML = "<br><strong> "+myazerty.name + "</strong> est un " + myazerty.genre + " bien costaud avec " + myazerty.pv + "PV qui vient s'échapper du Zoo et se procure une " + myazerty.equipement + ". Il se tient devant " + myperso.name +" pret à attaquer";
 
 
 
