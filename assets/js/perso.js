@@ -29,9 +29,10 @@ class Azerty {
       this.equipement = equipement;
   }
 }
-let myazerty = new Azerty("Azerty", "gorille", 200, 1000, "M4");
+let myazerty = new Azerty("Azerty", "gorille", 200, "M4");
 document.getElementById("persoAzerty").innerHTML= "Mon perso est un " + myazerty.genre + ", on le nomme " + myazerty.name;
 document.getElementById("azertyName").innerHTML = myazerty.name;
 document.getElementById("interactAzerty").innerHTML = "<br><strong> "+myazerty.name + "</strong> est un " + myazerty.genre + " bien costaud avec " + myazerty.pv + "PV qui vient s'échapper du Zoo et se procure une " + myazerty.equipement + ". Il se tient devant " + myperso.name +" pret à attaquer";
 
 console.log(myazerty.name + " est un " + myazerty.genre + " bien costaud avec " + myazerty.pv + "PV qui vient s'échapper du Zoo et se procure une " + myazerty.equipement + ". Il se tient devant " + myperso.name +" pret à attaquer" );
+// Classe - Akin
