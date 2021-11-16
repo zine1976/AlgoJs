@@ -27,6 +27,6 @@ _Les intèractions seront l'enjeux de notre battle, il devront avoir un espace s
 **Ali** (html)
 * Une partie du site dédier a l'affichage des joutes
 
-* Une entrée utilisateurs avec récéption/defense et envoie/attaque pour envoyer dans nos joutes ou alors pour envoyer des petits coeurs si vous etes une licorne  (optionnel pour aujourdhui )
+* Une entrée utilisateurs avec récéption/defense et envoie/attaque pour envoyer dans nos combat ou alors pour envoyer des petits coeurs si vous etes une licorne  (optionnel pour aujourdhui )
 
 * un affichage des pv et des interactions avec !

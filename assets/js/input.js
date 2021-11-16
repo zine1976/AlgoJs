@@ -23,11 +23,31 @@ document.body.appendChild(button);
 function getInputValue() {
         // selection de la valeur du champ texte
         let inputVal = inputed.value;
-        // Affichage de la valeur 
+        // Affichage de la valeur
         let newHero = new Perso (inputVal, 50, 1920, "Une Licorne", "des fleurs");
         alert("le nouveau Hero s'appelle "+newHero.name);
         var article = document.createElement("article");
         document.body.appendChild(article);
         article.innerHTML = newHero.name;
+
+      }
+
+var select = document.createElement("SELECT");
+select.setAttribute("option", "dog");
+select.setAttribute("option", "cat");
+select.setAttribute("option", "bird");
+select.setAttribute("option", "hamster");
+select.setAttribute("option", "spider");
+select.setAttribute("option", "goldfish");
+document.appendChild(select);
+
+function getSelectValue() {
+        // selection de la valeur du champ texte
+        let selectVal = select.value;
+        // Affichage de la valeur
+        alert("Selected Value "+ selectVal);
+        var article = document.createElement("article");
+        document.body.appendChild(article);
+        article.innerHTML = selectVal;
 
       }
