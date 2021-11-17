@@ -1,5 +1,32 @@
+.classimg{
+  background-image: url("../img/goku.png");
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  border: 3px solid red;
+}
 
+.classnewimg{
+  background-image: url("../img/gorille.png");
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  border: 3px solid red;
+}
 
+.newimage{
+  background-image: url("../img/luna.png");
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  border: 3px solid red;
+}
 
 .clickedd{
   height: 50px;
