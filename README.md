@@ -1,4 +1,4 @@
-# JavaScript-1
+# AlgoJS
 Learn basic of Javascript Client / Server
 
 
