@@ -1,4 +1,6 @@
-function age(a) {
+exports.age = function (a) {
+ 
+  
     let result;
     if (a < 18) {
       result = 'pas autorise';
@@ -7,7 +9,6 @@ function age(a) {
     }
     return result;
   }
-  
   console.log(age(16));
   // expected output: " autorise"
 

@@ -1,19 +1,27 @@
 var http = require('http');
+var fs = require('fs');
+var birth = require('./backup');
+var item = require('./cession');
+
 
 http.createServer(function (req, res) {
+fs. readFile('index.html', function(err,data){
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Hello World!');
+  res.write (data + item.createitem() + birth.backup(16));
+  return res.end('Hello World!');
+});
 }).listen(8080);
 
-function age(a) {
-  let result;
-  if (a < 18) {
-    result = 'pas autorise';
-  } else {
-    result = ' autorise';
-  }
-  return result;
-}
 
-console.log(age(16));
-// expected output: " autorise"
+[
+  { 
+    "name": "John", 
+    "age": 21,
+    "language": ["JavaScript", "PHP", "Python"] 
+  },
+  {
+     "name": "Smith",
+     "age": 25,
+     "language": ["PHP", "Go", "JavaScript"] 
+  }
+]
